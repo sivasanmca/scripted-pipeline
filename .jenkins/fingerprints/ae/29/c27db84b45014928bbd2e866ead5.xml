@@ -1,0 +1,21 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2020-10-12 04:38:53.952 UTC</timestamp>
+  <original>
+    <name>newfreestyle</name>
+    <number>4</number>
+  </original>
+  <md5sum>ae29c27db84b45014928bbd2e866ead5</md5sum>
+  <fileName>webapp.war</fileName>
+  <usages>
+    <entry>
+      <string>Testing</string>
+      <ranges>4</ranges>
+    </entry>
+    <entry>
+      <string>newfreestyle</string>
+      <ranges>4</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

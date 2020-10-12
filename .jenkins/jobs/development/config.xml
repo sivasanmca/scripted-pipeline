@@ -1,0 +1,38 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.40">
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.83">
+    <script>node(&apos;master&apos;)
+{
+stage(&apos;Continuous Download&apos;)
+   {
+   
+   git &apos;https://github.com/intelliqittrainings/maven.git&apos;
+   }
+ stage(&apos;Continuous Build&apos;)  
+   {
+    sh &apos;mvn package&apos;
+   }
+ stage(&apos;Continuous Deploy&apos;)  
+   {
+     sh &apos;scp /root/.jenkins/workspace/development/webapp/target/webapp.war ubuntu@172.31.25.8:/var/lib/tomcat8/webapps/test.app&apos;
+   }
+ stage(&apos;Continuous Testing&apos;)  
+   {
+       git &apos;https://github.com/intelliqittrainings/FunctionalTesting.git&apos;
+       sh &apos;java -jar  /root/.jenkins/workspace/development/testing.jar&apos;
+       
+   }
+ stage(&apos;Continuous Delivery&apos;)  
+   {
+       sh &apos;scp /root/.jenkins/workspace/development/webapp/target/webapp.war ubuntu@172.31.25.8:/var/lib/tomcat8/webapps/prod.app&apos;
+   }
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

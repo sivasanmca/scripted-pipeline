@@ -1,0 +1,19 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2020-10-12 04:26:39.772 UTC</timestamp>
+  <md5sum>908ce4049b5e6216f05e376b0089b2af</md5sum>
+  <fileName>Credential id=597303f4-f79d-4606-863a-83c767df9a17 name=sivasanmca/******</fileName>
+  <usages/>
+  <facets>
+    <com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet plugin="credentials@2.3.13">
+      <timestamp>1602477522969</timestamp>
+      <itemFullName>newfreestyle</itemFullName>
+      <timestamp0>1602477429348</timestamp0>
+    </com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet>
+    <com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet plugin="credentials@2.3.13">
+      <timestamp>1602477533997</timestamp>
+      <itemFullName>Testing</itemFullName>
+      <timestamp0>1602477483172</timestamp0>
+    </com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet>
+  </facets>
+</fingerprint>
